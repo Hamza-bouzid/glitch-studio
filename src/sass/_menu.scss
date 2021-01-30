@@ -1,0 +1,53 @@
+.nav-container {
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 2.2rem;
+}
+
+.nav-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1400;
+  height: 4.4rem;
+  background-color: rgba($color: #303030, $alpha: .8);
+  backdrop-filter: blur(2rem);
+}
+
+.nav {
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -1rem;
+  }
+
+  &__list-mobile {
+    display: none;
+  }
+}
+
+.nav-link {
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 0 1rem;
+  transition: opacity .5s;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.nav-link-glitch {
+  width: 2rem;
+  height: 5.4rem;
+  background: url('../../dist/img/apple.svg') center no-repeat;
+}
+
+.nav-link-instagram {
+  font-size: 4rem;
+  padding-top: .5rem;
+  color: var(--primary);
+}
