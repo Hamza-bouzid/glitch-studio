@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'DoctorGlitch';
+  src: url('DoctorGlitch.eot');
+  src: url('DoctorGlitch.eot?#iefix') format('embedded-opentype'),
+       url('DoctorGlitch.svg#DoctorGlitch') format('svg'),
+       url('DoctorGlitch.ttf') format('truetype'),
+       url('DoctorGlitch.woff') format('woff'),
+       url('DoctorGlitch.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

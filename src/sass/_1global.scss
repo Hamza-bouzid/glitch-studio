@@ -1,17 +1,33 @@
+
+:root {
 /******************************
 COLORI
 ******************************/
-:root {
   --primary: #E6009E;
   --secondary: #0BF8F9;
-  --dark: #212121;
+  --dark: #0e0e0e;
   --light: #f3f3f3;
+
+/******************************
+TITOLI
+******************************/
+  --heading-h1: 10rem;
+  --heading-h2: 5rem;
+  --heading-h3: 4rem;
 }
 
 
+
 @font-face {
-  font-family: doctoGlitch;
-  src: url('../../dist/fonts/Glitch.otf') format('opentype');
+  font-family: 'DoctorGlitch';
+  src: url('../../dist/fonts/Doctor\ Glitch.otf');
+  src: url('../../dist/fonts/DoctorGlitch.eot?#iefix') format('embedded-opentype'),
+       url('../../dist/fonts/DoctorGlitch.svg#DoctorGlitch') format('svg'),
+       url('../../dist/fonts/DoctorGlitch.ttf') format('truetype'),
+       url('../../dist/fonts/DoctorGlitch.woff') format('woff'),
+       url('../../dist/fonts/DoctorGlitch.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /******************************
@@ -44,6 +60,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.7;
+  background: var(--dark);
   color: #ffffff;
   overflow-x: hidden;
 }

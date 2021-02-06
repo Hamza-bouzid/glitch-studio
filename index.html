@@ -3,50 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--FAVICON-->
+    <link rel="shortcut icon" type="image/png" href="./dist/img/favcon.png" />
     <!--FONT-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
     />
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--CSS-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <link rel="stylesheet" href="dist/style.css" />
 
     <title>Glitch studio</title>
   </head>
   <body>
-    <!--MENU-->
+    <!--NAVIGATION-->
     <!--Menu mobile-->
     <div class="nav-header">
       <div class="nav-container">
         <nav class="nav">
           <ul class="nav__list nav__list-mobile">
             <li class="nav__list--item">
+              <a data-scroll href="#home" class="nav-link nav-link-glitch"
+                ><img
+                  class="nav-link-logo"
+                  src="./dist/img/logo glitch.png"
+                  alt=""
+              /></a>
+            </li>
+            <li class="nav__list--item">
               <div class="mobile-menu">
                 <span class="line line-top"></span>
                 <span class="line line-bottom"></span>
               </div>
             </li>
-            <li class="nav__list--item">
-              <a href="index.html" class="nav-link nav-link-glitch"
-                ><img class="nav-link-logo" src="./dist/img/apple.png" alt=""
-              /></a>
-            </li>
+            <!--
             <li class="nav__list--item">
               <a href="#" class="nav-link"
                 ><i class="fab fa-instagram nav-link-instagram"></i
               ></a>
             </li>
+            -->
           </ul>
           <!--Menu desktop-->
           <ul class="nav__list nav__list-larger">
             <li class="nav__list--item nav-item-hidden">
-              <a href="index.html" class="nav-link nav-link-glitch"
-                ><img class="nav-link-logo" src="./dist/img/apple.png" alt=""
+              <a data-scroll href="#home" class="nav-link nav-link-glitch"
+                ><img
+                  class="nav-link-logo"
+                  src="./dist/img/logo glitch.png"
+                  alt=""
               /></a>
             </li>
             <li class="nav__list--item">
-              <a href="#" class="nav-link">Produzione Video</a>
+              <a data-scroll href="#produzione-video" class="nav-link"
+                >Produzione Video</a
+              >
             </li>
             <li class="nav__list--item">
               <a href="#" class="nav-link">Animazioni 2D</a>
@@ -58,107 +76,221 @@
               <a href="#" class="nav-link">CGI/VFX</a>
             </li>
             <li class="nav__list--item">
-              <a href="#" class="nav-link">Regia live</a>
+              <a href="#regia-live" class="nav-link">Regia live</a>
             </li>
             <li class="nav__list--item">
-              <a href="#" class="nav-link">Fotografia</a>
+              <a href="#" class="nav-link">Sala Pose</a>
             </li>
             <li class="nav__list--item">
               <a href="#" class="nav-link">Contatti</a>
             </li>
+            <!--
             <li class="nav__list--item nav-item-hidden">
               <a href="#" class="nav-link"
                 ><i class="fab fa-instagram nav-link-instagram"></i
               ></a>
             </li>
+            -->
           </ul>
         </nav>
       </div>
     </div>
+    <!--NAVIGATION ENDS-->
 
     <!--HEADER-->
-    <header class="header header-container">
+    <header id="home" class="header header-container">
       <!--background video-->
       <div class="header__video">
-        <video autoplay muted poster="">
-          <source
-            src="./dist/video/video home.mp4"
-          />
+        <video autoplay muted>
+          <source src="./dist/video/video home.mp4" />
         </video>
       </div>
       <div class="header__overlay"></div>
       <!--header content-->
       <div class="header__content">
-        <a href="" class="btn">Contattaci</a>
-        <h1>Glitch Studio</h1>
+        <!--<a href="" class="btn btn-header">Contattaci</a>-->
+        <h1 class="glitch">
+          <span aria-hidden="true">Glitch Studio</span>
+          Glitch Studio
+          <span aria-hidden="true">Glitch Studio</span>
+        </h1>
       </div>
     </header>
+    <!--HEADER ENDS-->
 
-    <section>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque
-        vitae tempore dolorum? Ut non ratione fuga consequuntur adipisci
-        laboriosam illum porro, reprehenderit, nam laudantium, provident autem
-        est distinctio vero earum assumenda repellendus magnam. Odio incidunt
-        ipsam tempore rerum qui, unde temporibus. Culpa aperiam molestiae amet
-        sed eius. Incidunt corporis, consequatur temporibus mollitia saepe cum
-        veniam voluptatum quae tenetur obcaecati culpa eaque ipsam cumque
-        molestiae quis ducimus earum doloremque nisi explicabo error quisquam
-        iusto! Explicabo ducimus dolores eum culpa blanditiis neque possimus,
-        officiis rerum amet tenetur est animi veritatis quis repellat cumque!
-        Rerum quae odio alias voluptas dolore aliquid. Praesentium voluptatum
-        dolorem voluptatem necessitatibus in sapiente, quod, distinctio rem
-        velit rerum maiores inventore modi sequi minus architecto, molestias
-        porro sit doloribus eum. Voluptates praesentium soluta dolore animi,
-        mollitia aperiam enim et exercitationem, repellendus consequuntur, eos
-        odio dignissimos ducimus accusantium cumque? Aperiam, dignissimos
-        consequatur sint earum vero iste. Ut earum quae repellat, neque tempora
-        nobis repellendus nihil recusandae delectus culpa est ipsa asperiores,
-        eaque doloremque dolore sunt harum maiores minima sit laborum
-        praesentium ipsam qui? Eius exercitationem nesciunt, amet, perspiciatis
-        asperiores, rerum quis voluptate eveniet a magni ab blanditiis cumque.
-        Impedit quod, sint ex delectus mollitia facere veritatis iure placeat,
-        ipsa maiores, a nisi voluptatibus repellat recusandae iste voluptas
-        sapiente vitae cupiditate ipsum ab corporis distinctio error debitis
-        quas! Odio rem eum ipsa adipisci fugit, ab vitae aut delectus quasi cum
-        beatae inventore quo esse eveniet reiciendis veniam officia tenetur in.
-        Voluptates similique quibusdam assumenda mollitia tempore rem? Sunt
-        animi error totam perspiciatis vero aspernatur non nemo qui accusantium
-        adipisci doloribus sint in, velit doloremque eum ad distinctio harum
-        explicabo fuga consequatur repellat cupiditate. Eum nisi nemo,
-        cupiditate ullam rem aspernatur quaerat recusandae laborum blanditiis
-        inventore delectus iure assumenda iusto molestias fugiat ad architecto
-        illum ut aperiam porro provident maiores. Saepe, beatae debitis?
-        Quibusdam deserunt, vel neque pariatur consequuntur ullam dignissimos
-        dicta tempora eaque autem non inventore error expedita corrupti atque
-        sunt itaque enim aliquid accusamus. Aliquid, exercitationem distinctio
-        repudiandae eum animi excepturi praesentium quod provident, eaque, alias
-        magni est? Perferendis ipsum natus odio quos quod temporibus reiciendis
-        architecto placeat earum illo ab ducimus dolor velit, aperiam, sint
-        maiores consequuntur aut! Aliquam quas illo, explicabo laudantium libero
-        fuga! Voluptatibus, hic provident ex eum laudantium harum repellat
-        aliquam in tenetur. Doloremque unde dignissimos praesentium suscipit ea
-        necessitatibus perferendis quos aspernatur! Dolores veniam aut atque
-        quaerat corrupti ab explicabo minus odit, aperiam ea! Placeat ad facere
-        fugit illo? Facilis quia rerum in nihil magni, tenetur quidem dolorum
-        doloremque, architecto quis tempore! Eius alias unde doloribus vero
-        necessitatibus incidunt placeat at! Cupiditate aspernatur beatae quam
-        aperiam eius dolore, voluptatem maiores placeat fugiat dolor neque rem
-        architecto illum eaque labore obcaecati dolorem ad repellat. Fuga quod
-        nisi eius veniam saepe iusto, vel tempore quaerat quas, expedita
-        suscipit, ratione explicabo exercitationem? Repellat nemo deleniti
-        consequatur nesciunt quod nostrum error corrupti at eos, cumque vel
-        ducimus earum harum amet inventore? Quae qui deserunt, provident
-        quibusdam, nulla sed ipsam soluta suscipit dolore laudantium quisquam,
-        fuga sequi numquam rem?
-      </p>
+    <!--PRODUZIONE VIDEO-->
+    <section id="produzione-video">
+      <div class="videopro">
+        <div class="videopro__heading">
+          <h2>Produzione Video</h2>
+        </div>
+        <div class="videopro__text">
+          <h3><span>Lorem </span>Ipsum dolor</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            reiciendis dolore architecto! Tempore, suscipit illo omnis, possimus
+            corporis voluptate asperiores deserunt debitis quis ut sit delectus,
+            quidem totam expedita aut? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Praesentium reiciendis dolore architecto! Tempore,
+            suscipit illo omnis, possimus corporis voluptate asperiores deserunt
+            debitis quis ut sit delectus, quidem totam expedita aut?
+          </p>
+        </div>
+        <div class="videopro__video">
+          <video
+            poster="./dist/img/background-image.jpg"
+            src="./dist/video/Woman Waiting For A Taxi.mp4"
+            controls
+          ></video>
+        </div>
+        <div class="videopro__gallery">
+          <div
+            class="main-carousel"
+            data-flickity='{"autoPlay": true, "wrapAround": true}'
+          >
+            <div class="cell">
+              <img src="/dist/img/foto galleria1 (1).jpg" alt="" />
+            </div>
+            <div class="cell">
+              <img src="/dist/img/foto galleria1 (2).jpg" alt="" />
+            </div>
+            <div class="cell">
+              <img src="/dist/img/foto galleria1 (3).jpg" alt="" />
+            </div>
+            <div class="cell">
+              <img src="/dist/img/foto galleria1 (4).jpg" alt="" />
+            </div>
+            <div class="cell">
+              <img src="/dist/img/foto galleria1 (5).jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--PRODUZIONE VIDEO ENDS-->
+    <!--REGIA LIVE-->
+    <section id="regia-live">
+      <div class="regiaLive__heading">
+        <h2>Regia live</h2>
+      </div>
+      <div class="regiaLive">
+        <div class="regiaLive__text">
+          <h3><span>Lorem </span>Ipsum dolor</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            reiciendis dolore architecto! Tempore, suscipit illo omnis, possimus
+            corporis voluptate asperiores deserunt debitis quis ut sit delectus,
+            quidem totam expedita aut? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Praesentium reiciendis dolore architecto! Tempore,
+            suscipit illo omnis, possimus corporis voluptate asperiores deserunt
+            debitis quis ut sit delectus, quidem totam expedita aut?
+          </p>
+        </div>
+        <div class="regiaLive__video">
+          <video
+            poster="./dist/img/regia-live foto.jpg"
+            src="./dist/video/Woman Waiting For A Taxi.mp4"
+            controls
+          ></video>
+        </div>
+        <div class="regiaLive__gallery">
+          <div
+            class="main-carousel"
+            data-flickity='{"autoPlay": true, "wrapAround": true}'
+          >
+            <div class="cell">
+              <img src="/dist/img/foto galleria1 (1).jpg" alt="" />
+            </div>
+            <div class="cell">
+              <img src="/dist/img/foto galleria1 (2).jpg" alt="" />
+            </div>
+            <div class="cell">
+              <img src="/dist/img/foto galleria1 (3).jpg" alt="" />
+            </div>
+            <div class="cell">
+              <img src="/dist/img/foto galleria1 (4).jpg" alt="" />
+            </div>
+            <div class="cell">
+              <img src="/dist/img/foto galleria1 (5).jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--REGIA LIVE ENDS-->
+    <!--SALA POSE-->
+    <section id="sala-pose">
+      <div class="slaPose">
+        <div class="salaPose__bg">
+          <div class="salaPose__bg--heading">
+            <h2>Sala Pose</h2>
+          </div>
+          <div class="salaPose__bg--paragraph">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              quibusdam corrupti error quia labore sequi repellat, enim culpa. A
+              veritatis quod dolores magni fugit, voluptate expedita possimus
+              cum tenetur deleniti!
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <script type="text/javascript">
+      $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        wrapAround: true,
+      });
+    </script>
+    <!--FLICKITY-->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!--FONT AWESOME-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
       integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw=="
       crossorigin="anonymous"
     ></script>
+    <!--SMOOTH SCROOL-->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <!--APP.JS-->
     <script src="src/js/app.js"></script>
   </body>
 </html>

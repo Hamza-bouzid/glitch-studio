@@ -12,6 +12,8 @@
     "node-sass": "^5.0.0"
   },
   "dependencies": {
-    "jquery": "^3.5.1"
+    "flickity": "^2.2.2",
+    "jquery": "^3.5.1",
+    "smooth-scroll": "^16.1.3"
   }
 }

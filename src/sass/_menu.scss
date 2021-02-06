@@ -14,12 +14,11 @@
   width: 100%;
   z-index: 1400;
   height: 4.4rem;
-  background-color: rgba($color: #000, $alpha: .8);
+  background-color: rgba($color: #333, $alpha: .5);
   backdrop-filter: blur(2rem);
 
 
   @include respond(phone){
-    height: 4rem;
     transition: background .36s cubic-bezier(0.32, 0.08, 0.24, 1),
                 height .56s cubic-bezier(0.32, 0.08, 0.24, 1);
   }
@@ -36,7 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 -1rem;
+    margin: 0 1rem;
 
     @include respond(phone){
       margin-top: 0;
@@ -86,7 +85,7 @@
   transition: opacity .5s;
 
   &:hover {
-    opacity: .7;
+    color: var(--primary);
   }
 
   @include respond(phone){
@@ -102,13 +101,14 @@
 }
 
 .nav-link-logo {
+  margin-top: .2rem;
   height: 4rem;
-  width: 3.5rem;
-  padding-top: .5rem;
+  width: 4rem;
+  
 
   @include respond(phone){
-    height: 3rem;
-    width: 3rem;
+    height: 4rem;
+    width: 4rem;
     margin-top: .4rem;
     position: relative;
     z-index: 1500;
