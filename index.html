@@ -14,6 +14,8 @@
     <!--JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--CSS-->
+     <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -236,56 +238,106 @@
         </div>
         <div class="salaPose__gallery">
           <div class="salaPose__gallery--img">
-            <img src="./dist/img/foto galleria1 (2).jpg" alt="">
+            <img src="./dist/img/foto galleria1 (2).jpg" alt="" />
           </div>
           <div class="salaPose__gallery--img">
-            <img src="./dist/img/foto galleria1 (3).jpg" alt="">
+            <img src="./dist/img/foto galleria1 (3).jpg" alt="" />
           </div>
           <div class="salaPose__gallery--img">
-            <img src="./dist/img/foto galleria1 (4).jpg" alt="">
+            <img src="./dist/img/foto galleria1 (4).jpg" alt="" />
           </div>
           <div class="salaPose__gallery--img">
-            <img src="./dist/img/foto galleria1 (5).jpg" alt="">
+            <img src="./dist/img/foto galleria1 (5).jpg" alt="" />
           </div>
         </div>
       </div>
     </section>
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <!--SALA POSE ENDS-->
+    <!--CONTATTI-->
+    <section id="contatti">
+      <div class="contatti">
+        <div class="contatti__content">
+          <h2>Contatti</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            beatae, explicabo nisi, illum magnam nam recusandae libero minus
+            dolorem a culpa est hic, illo assumenda. Reprehenderit minus iste
+            expedita nesciunt!
+          </p>
+        </div>
+        <div class="contatti__container">
+          <div class="contattiInfo">
+            <div class="infoBox">
+              <div class="infoBox__icon">
+                <i class="fa fa-map" aria-hidden="true"></i>
+              </div>
+              <div class="infoBox__text">
+                <h3>Indirizzo</h3>
+                <a href="https://goo.gl/maps/McuVHuNkbi4kfDzZA" target="_blank"
+                  >Corso Giuseppe Mazzini, 5, 37012 Bussolengo VR</a
+                >
+              </div>
+            </div>
+            <div class="infoBox">
+              <div class="infoBox__icon">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+              <div class="infoBox__text">
+                <h3>Telefono</h3>
+                <a href="tel:+393203411347">+393203411347</a>
+              </div>
+            </div>
+            <div class="infoBox">
+              <div class="infoBox__icon">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div class="infoBox__text">
+                <h3>Email</h3>
+                <a href="mailto:glitchstudio.vr@gmail.com"
+                  >glitchstudio.vr@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="contattiForm">
+            <form>
+              <h4>Invia Messaggio</h4>
+              <div class="input-box">
+                <input type="text" name="" required />
+                <span>Nome completo</span>
+              </div>
+              <div class="input-box">
+                <input type="text" name="" required />
+                <span>Email</span>
+              </div>
+              <div class="input-box">
+                <textarea required rows="6"></textarea>
+                <span> Scrivi il tuo messaggio...</span>
+              </div>
+              <div class="input-box">
+                <input type="submit" name="" value="Invia" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--CONTATTI ENDS-->
+    <!--FOOTER-->
+    <footer id="footer">
+      <div class="footer__container">
+        <img class="footer__container--img" src="./dist/img/logo scritta.png" alt="logo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ducimus eligendi ipsum! Quo, commodi nisi.</p>
+        <ul class="footer__container--socials">
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <p>copyright &copy;2021 Glitch Studio</p>
+      </div>
+    </footer>
 
     <script type="text/javascript">
       $('.main-carousel').flickity({
@@ -296,12 +348,6 @@
     </script>
     <!--FLICKITY-->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <!--FONT AWESOME-->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
-      integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw=="
-      crossorigin="anonymous"
-    ></script>
     <!--SMOOTH SCROOL-->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <!--APP.JS-->

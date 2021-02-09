@@ -1,0 +1,135 @@
+/******************************
+CONTATTI
+******************************/
+.contatti {
+  position: relative;
+  min-height: 100vh;
+  padding: 5rem 10rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.1)),
+    url('../../../dist/img/background-image.jpg') center no-repeat;
+  background-size: cover;
+
+  &__content {
+    text-align: center;
+    max-width: 60%;
+    margin-bottom: 5rem;
+
+    & h2 {
+      font-size: var(--heading-h2);
+    }
+
+    & p {
+      font-size: 2rem;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  &__container .contattiInfo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.infoBox {
+  position: relative;
+  padding: 2rem 0;
+  display: flex;
+
+  &__icon {
+    color: var(--primary);
+    min-width: 6rem;
+    height: 6rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 2rem;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+
+    & h3 {
+      color: var(--primary);
+    }
+
+    & a,
+    & a:active {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.contattiForm {
+  width: 40%;
+  padding: 4rem;
+  background: #fff;
+  color: var(--dark);
+
+  & h4 {
+    font-size: 3rem;
+  }
+
+  & .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  & .input-box input,
+  & .input-box textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 2rem;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+  }
+
+  & .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+  & .input-box input:focus ~ span,
+  & .input-box input:valid ~ span,
+  & .input-box textarea:focus ~ span,
+  & .input-box textarea:valid ~ span {
+    color: var(--primary);
+    font-size: 12px;
+    transform: translateY(-20px);
+  }
+
+  & .input-box input[type='submit'] {
+    width: 10rem;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 2rem;
+  }
+}

@@ -156,7 +156,8 @@ HEADER
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
-  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  color: #000;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75);
   -webkit-animation: glitch 500ms infinite;
           animation: glitch 500ms infinite;
 }
@@ -192,48 +193,48 @@ HEADER
 /* https://web.dev/prefers-reduced-motion/#(bonus)-forcing-reduced-motion-on-all-websites */
 @-webkit-keyframes glitch {
   0% {
-    text-shadow: 0.05em 0 0 rgba(230, 0, 158, 0.75), -0.05em -0.025em 0 rgba(11, 248, 249, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: 0.05em 0 0 rgba(230, 0, 158, 0.75), -0.05em -0.025em 0 rgba(11, 248, 249, 0.75);
   }
   14% {
-    text-shadow: 0.05em 0 0 rgba(230, 0, 158, 0.75), -0.05em -0.025em 0 rgba(11, 248, 249, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: 0.05em 0 0 rgba(230, 0, 158, 0.75), -0.05em -0.025em 0 rgba(11, 248, 249, 0.75);
   }
   15% {
-    text-shadow: -0.05em -0.025em 0 rgba(230, 0, 158, 0.75), 0.025em 0.025em 0 rgba(11, 248, 249, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: -0.05em -0.025em 0 rgba(230, 0, 158, 0.75), 0.025em 0.025em 0 rgba(11, 248, 249, 0.75);
   }
   49% {
-    text-shadow: -0.05em -0.025em 0 rgba(230, 0, 158, 0.75), 0.025em 0.025em 0 rgba(11, 248, 249, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: -0.05em -0.025em 0 rgba(230, 0, 158, 0.75), 0.025em 0.025em 0 rgba(11, 248, 249, 0.75);
   }
   50% {
-    text-shadow: 0.025em 0.05em 0 rgba(230, 0, 158, 0.75), 0.05em 0 0 rgba(11, 248, 249, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: 0.025em 0.05em 0 rgba(230, 0, 158, 0.75), 0.05em 0 0 rgba(11, 248, 249, 0.75);
   }
   99% {
-    text-shadow: 0.025em 0.05em 0 rgba(230, 0, 158, 0.75), 0.05em 0 0 rgba(11, 248, 249, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: 0.025em 0.05em 0 rgba(230, 0, 158, 0.75), 0.05em 0 0 rgba(11, 248, 249, 0.75);
   }
   100% {
-    text-shadow: -0.025em 0 0 rgba(230, 0, 158, 0.75), -0.025em -0.025em 0 rgba(11, 248, 249, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: -0.025em 0 0 rgba(230, 0, 158, 0.75), -0.025em -0.025em 0 rgba(11, 248, 249, 0.75);
   }
 }
 @keyframes glitch {
   0% {
-    text-shadow: 0.05em 0 0 rgba(230, 0, 158, 0.75), -0.05em -0.025em 0 rgba(11, 248, 249, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: 0.05em 0 0 rgba(230, 0, 158, 0.75), -0.05em -0.025em 0 rgba(11, 248, 249, 0.75);
   }
   14% {
-    text-shadow: 0.05em 0 0 rgba(230, 0, 158, 0.75), -0.05em -0.025em 0 rgba(11, 248, 249, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: 0.05em 0 0 rgba(230, 0, 158, 0.75), -0.05em -0.025em 0 rgba(11, 248, 249, 0.75);
   }
   15% {
-    text-shadow: -0.05em -0.025em 0 rgba(230, 0, 158, 0.75), 0.025em 0.025em 0 rgba(11, 248, 249, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: -0.05em -0.025em 0 rgba(230, 0, 158, 0.75), 0.025em 0.025em 0 rgba(11, 248, 249, 0.75);
   }
   49% {
-    text-shadow: -0.05em -0.025em 0 rgba(230, 0, 158, 0.75), 0.025em 0.025em 0 rgba(11, 248, 249, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: -0.05em -0.025em 0 rgba(230, 0, 158, 0.75), 0.025em 0.025em 0 rgba(11, 248, 249, 0.75);
   }
   50% {
-    text-shadow: 0.025em 0.05em 0 rgba(230, 0, 158, 0.75), 0.05em 0 0 rgba(11, 248, 249, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: 0.025em 0.05em 0 rgba(230, 0, 158, 0.75), 0.05em 0 0 rgba(11, 248, 249, 0.75);
   }
   99% {
-    text-shadow: 0.025em 0.05em 0 rgba(230, 0, 158, 0.75), 0.05em 0 0 rgba(11, 248, 249, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: 0.025em 0.05em 0 rgba(230, 0, 158, 0.75), 0.05em 0 0 rgba(11, 248, 249, 0.75);
   }
   100% {
-    text-shadow: -0.025em 0 0 rgba(230, 0, 158, 0.75), -0.025em -0.025em 0 rgba(11, 248, 249, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: -0.025em 0 0 rgba(230, 0, 158, 0.75), -0.025em -0.025em 0 rgba(11, 248, 249, 0.75);
   }
 }
 
@@ -406,7 +407,7 @@ REGIA LIVE
   -ms-grid-column-span: 2;
   grid-column: 1/3;
   padding: 2rem;
-  margin-top: 5rem;
+  margin: 5rem 0;
 }
 
 /******************************
@@ -451,6 +452,279 @@ SALA POSE
 .salaPose__bg--paragraph {
   font-size: 2rem;
   width: 50%;
+}
+
+.salaPose__gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px;
+}
+
+.salaPose__gallery--img {
+  height: 350px;
+  width: 100%;
+  padding: 20px;
+}
+
+.salaPose__gallery--img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/******************************
+CONTATTI
+******************************/
+.contatti {
+  position: relative;
+  min-height: 100vh;
+  padding: 5rem 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1))), url("../../../dist/img/background-image.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.1)), url("../../../dist/img/background-image.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.contatti__content {
+  text-align: center;
+  max-width: 60%;
+  margin-bottom: 5rem;
+}
+
+.contatti__content h2 {
+  font-size: var(--heading-h2);
+}
+
+.contatti__content p {
+  font-size: 2rem;
+}
+
+.contatti__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+.contatti__container .contattiInfo {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.infoBox {
+  position: relative;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.infoBox__icon {
+  color: var(--primary);
+  min-width: 6rem;
+  height: 6rem;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+
+.infoBox__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.infoBox__text h3 {
+  color: var(--primary);
+}
+
+.infoBox__text a,
+.infoBox__text a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contattiForm {
+  width: 40%;
+  padding: 4rem;
+  background: #fff;
+  color: var(--dark);
+}
+
+.contattiForm h4 {
+  font-size: 3rem;
+}
+
+.contattiForm .input-box {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contattiForm .input-box input,
+.contattiForm .input-box textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 2rem;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contattiForm .input-box span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.contattiForm .input-box input:focus ~ span,
+.contattiForm .input-box input:valid ~ span,
+.contattiForm .input-box textarea:focus ~ span,
+.contattiForm .input-box textarea:valid ~ span {
+  color: var(--primary);
+  font-size: 12px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.contattiForm .input-box input[type='submit'] {
+  width: 10rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+/******************************
+FOOTER
+******************************/
+footer {
+  background: var(--dark);
+  height: auto;
+  width: 100vw;
+  padding-top: 4rem;
+  color: #fff;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.footer__container--img {
+  width: 25rem;
+  height: auto;
+}
+
+.footer__container p {
+  max-width: 50rem;
+  margin: 10px auto;
+  font-size: 1.4rem;
+}
+
+.footer__container--socials {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.footer__container--socials li {
+  margin: 0 10px;
+}
+
+.footer__container--socials a i {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 100;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+.footer__container--socials a:hover i {
+  color: var(--primary);
+}
+
+.footer__bottom {
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer__bottom p {
+  font-size: 1.2rem;
+  word-spacing: 2px;
+  text-transform: capitalize;
 }
 
 /******************************
