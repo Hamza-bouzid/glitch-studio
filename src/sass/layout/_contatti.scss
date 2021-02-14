@@ -9,9 +9,10 @@ CONTATTI
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(rgba(0, 0, 0, 0.1)),
-    url('../../../dist/img/background-image.jpg') center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8)),
+    url('../../../dist/img/Studio.jpg') center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 
   &__content {
     text-align: center;
@@ -83,6 +84,7 @@ CONTATTI
   padding: 4rem;
   background: #fff;
   color: var(--dark);
+  text-align: center;
 
   & h4 {
     font-size: 3rem;
@@ -98,7 +100,7 @@ CONTATTI
   & .input-box textarea {
     width: 100%;
     padding: 5px 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 10px 0;
     border: none;
     border-bottom: 2px solid #333;
@@ -110,7 +112,7 @@ CONTATTI
     position: absolute;
     left: 0;
     padding: 5px 0;
-    font-size: 1.5rem;
+    font-size: 0rem;
     margin: 10px 0;
   }
 

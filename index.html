@@ -25,13 +25,16 @@
     <title>Glitch studio</title>
   </head>
   <body>
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
     <!--NAVIGATION-->
     <!--Menu mobile-->
     <div class="nav-header">
       <div class="nav-container">
         <nav class="nav">
           <ul class="nav__list nav__list-mobile">
-            <li class="nav__list--item">
+            <li id="logo-nav" class="nav__list--item">
               <a data-scroll href="#home" class="nav-link nav-link-glitch"
                 ><img
                   class="nav-link-logo"
@@ -63,28 +66,28 @@
                   alt=""
               /></a>
             </li>
-            <li class="nav__list--item">
+            <li id="link1-nav" class="nav__list--item close-navbar">
               <a data-scroll href="#produzione-video" class="nav-link"
                 >Produzione Video</a
               >
             </li>
-            <li class="nav__list--item">
-              <a href="#" class="nav-link">Animazioni 2D</a>
+            <li id="link1-nav" class="nav__list--item close-navbar">
+              <a href="#animazioni2d" class="nav-link">Animazioni 2D</a>
             </li>
-            <li class="nav__list--item">
-              <a href="#" class="nav-link">animazioni 3D</a>
+            <li id="link2-nav" class="nav__list--item close-navbar">
+              <a href="#animazioni3d" class="nav-link">animazioni 3D</a>
             </li>
-            <li class="nav__list--item">
+            <li id="link3-nav" class="nav__list--item close-navbar">
               <a href="#" class="nav-link">CGI/VFX</a>
             </li>
-            <li class="nav__list--item">
+            <li id="link4-nav" class="nav__list--item close-navbar">
               <a href="#regia-live" class="nav-link">Regia live</a>
             </li>
-            <li class="nav__list--item">
-              <a href="#" class="nav-link">Sala Pose</a>
+            <li id="link5-nav" class="nav__list--item close-navbar">
+              <a href="#sala-pose" class="nav-link">Sala Pose</a>
             </li>
-            <li class="nav__list--item">
-              <a href="#" class="nav-link">Contatti</a>
+            <li id="link6-nav" class="nav__list--item close-navbar">
+              <a href="#contatti" class="nav-link">Contatti</a>
             </li>
             <!--
             <li class="nav__list--item nav-item-hidden">
@@ -303,16 +306,16 @@
             <form>
               <h4>Invia Messaggio</h4>
               <div class="input-box">
-                <input type="text" name="" required />
+                <input type="text" name="" placeholder="Nome completo" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nome completo'" required />
                 <span>Nome completo</span>
               </div>
               <div class="input-box">
-                <input type="text" name="" required />
+                <input type="text" name="" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" required />
                 <span>Email</span>
               </div>
               <div class="input-box">
-                <textarea required rows="6"></textarea>
-                <span> Scrivi il tuo messaggio...</span>
+                <textarea placeholder="Scrivi il tuo messaggio..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Scrivi il tuo messaggio...'" required rows="6"></textarea>
+                <span>Messaggio</span>
               </div>
               <div class="input-box">
                 <input type="submit" name="" value="Invia" />
@@ -329,9 +332,9 @@
         <img class="footer__container--img" src="./dist/img/logo scritta.png" alt="logo">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ducimus eligendi ipsum! Quo, commodi nisi.</p>
         <ul class="footer__container--socials">
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://www.instagram.com/glitch_studio/?hl=it" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/GlitchStudioVr" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
         </ul>
       </div>
       <div class="footer__bottom">
@@ -339,12 +342,19 @@
       </div>
     </footer>
 
+    <!--Flickity gallery-->
     <script type="text/javascript">
       $('.main-carousel').flickity({
         // options
         cellAlign: 'left',
         wrapAround: true,
       });
+    </script>
+    <!--Preloader-->
+    <script>
+    $(window).on("load", function() {
+      $(".loader-container").fadeOut(1000);
+    });
     </script>
     <!--FLICKITY-->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

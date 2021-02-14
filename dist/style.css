@@ -495,9 +495,10 @@ CONTATTI
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1))), url("../../../dist/img/background-image.jpg") center no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.1)), url("../../../dist/img/background-image.jpg") center no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8))), url("../../../dist/img/Studio.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8)), url("../../../dist/img/Studio.jpg") center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .contatti__content {
@@ -593,6 +594,7 @@ CONTATTI
   padding: 4rem;
   background: #fff;
   color: var(--dark);
+  text-align: center;
 }
 
 .contattiForm h4 {
@@ -609,7 +611,7 @@ CONTATTI
 .contattiForm .input-box textarea {
   width: 100%;
   padding: 5px 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 10px 0;
   border: none;
   border-bottom: 2px solid #333;
@@ -621,7 +623,7 @@ CONTATTI
   position: absolute;
   left: 0;
   padding: 5px 0;
-  font-size: 1.5rem;
+  font-size: 0rem;
   margin: 10px 0;
 }
 
@@ -738,6 +740,37 @@ BUTTONS
   text-decoration: none;
   -webkit-box-shadow: 10px 10px 35px -3px rgba(0, 0, 0, 0.85);
           box-shadow: 10px 10px 35px -3px rgba(0, 0, 0, 0.85);
+}
+
+/******************************
+PRELOADER
+******************************/
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2000;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid;
+  color: var(--primary);
+  border-radius: 50%;
+  border-top-color: transparent;
+  -webkit-animation: loader 1.2s linear infinite;
+          animation: loader 1.2s linear infinite;
 }
 
 .nav-container {
@@ -1013,7 +1046,7 @@ BUTTONS
 }
 
 /******************************
-NAV BAR ANIMATION
+ANIMATION
 ******************************/
 @-webkit-keyframes fadeIn {
   from {
@@ -1029,6 +1062,38 @@ NAV BAR ANIMATION
   }
   to {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes loader {
+  25% {
+    color: #2ecc71;
+  }
+  50% {
+    color: #e74c3c;
+  }
+  75% {
+    color: var(--secondary);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loader {
+  25% {
+    color: #2ecc71;
+  }
+  50% {
+    color: #e74c3c;
+  }
+  75% {
+    color: var(--secondary);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 /*# sourceMappingURL=style.css.map */

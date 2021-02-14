@@ -1,5 +1,5 @@
 /******************************
-NAV BAR ANIMATION
+ANIMATION
 ******************************/
 @keyframes fadeIn {
   from {
@@ -8,5 +8,20 @@ NAV BAR ANIMATION
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes loader {
+  25% {
+    color: #2ecc71;
+  }
+  50% {
+    color: #e74c3c;
+  }
+  75% {
+    color: var(--secondary);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
