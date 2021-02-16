@@ -241,16 +241,16 @@
         </div>
         <div class="salaPose__gallery">
           <div class="salaPose__gallery--img">
-            <img src="./dist/img/foto galleria1 (2).jpg" alt="" />
+            <img class="lax lax_preset_blurInOut:234.25:20" src="./dist/img/foto galleria1 (2).jpg" alt="" />
           </div>
           <div class="salaPose__gallery--img">
-            <img src="./dist/img/foto galleria1 (3).jpg" alt="" />
+            <img class="lax lax_preset_blurInOut:234.25:20" src="./dist/img/foto galleria1 (3).jpg" alt="" />
           </div>
           <div class="salaPose__gallery--img">
-            <img src="./dist/img/foto galleria1 (4).jpg" alt="" />
+            <img class="lax lax_preset_blurInOut:234.25:20" src="./dist/img/foto galleria1 (4).jpg" alt="" />
           </div>
           <div class="salaPose__gallery--img">
-            <img src="./dist/img/foto galleria1 (5).jpg" alt="" />
+            <img class="lax lax_preset_blurInOut:234.25:20" src="./dist/img/foto galleria1 (5).jpg" alt="" />
           </div>
         </div>
       </div>
@@ -355,6 +355,28 @@
     $(window).on("load", function() {
       $(".loader-container").fadeOut(1000);
     });
+    </script>
+    <!--LAXXX-->
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script>
+      window.onload = function () {
+    lax.init()
+
+    // Add a driver that we use to control our animations
+    lax.addDriver('scrollY', function () {
+      return window.scrollY
+    })
+
+    // Add animation bindings to elements
+    lax.addElements('.selector', {
+      scrollY: {
+        translateX: [
+          ["elInY", "elCenterY", "elOutY"],
+          [0, 'screenWidth/2', 'screenWidth'],
+        ]
+      }
+    })
+  }
     </script>
     <!--FLICKITY-->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

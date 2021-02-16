@@ -58,12 +58,12 @@ HEADER
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
-  color: #000;
+  color: rgb(216, 211, 211);
 
   text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
     -0.025em -0.05em 0 rgba(0, 255, 0, 0.75);
 
-  animation: glitch 500ms infinite;
+  animation: glitch-opacity 11s linear, glitch 500ms infinite;
 }
 
 .glitch span {
@@ -86,39 +86,6 @@ HEADER
   transform: translate(0.0125em, 0.025em);
   /* color: red; */
   opacity: 0.8;
-}
-
-/* https://web.dev/prefers-reduced-motion/#(bonus)-forcing-reduced-motion-on-all-websites */
-
-@keyframes glitch {
-  0% {
-    text-shadow: 0.05em 0 0 rgba(230, 0, 158, 0.75),
-      -0.05em -0.025em 0 rgba(11, 248, 249, 0.75);
-  }
-  14% {
-    text-shadow: 0.05em 0 0 rgba(230, 0, 158, 0.75),
-      -0.05em -0.025em 0 rgba(11, 248, 249, 0.75);
-  }
-  15% {
-    text-shadow: -0.05em -0.025em 0 rgba(230, 0, 158, 0.75),
-      0.025em 0.025em 0 rgba(11, 248, 249, 0.75);
-  }
-  49% {
-    text-shadow: -0.05em -0.025em 0 rgba(230, 0, 158, 0.75),
-      0.025em 0.025em 0 rgba(11, 248, 249, 0.75);
-  }
-  50% {
-    text-shadow: 0.025em 0.05em 0 rgba(230, 0, 158, 0.75),
-      0.05em 0 0 rgba(11, 248, 249, 0.75);
-  }
-  99% {
-    text-shadow: 0.025em 0.05em 0 rgba(230, 0, 158, 0.75),
-      0.05em 0 0 rgba(11, 248, 249, 0.75);
-  }
-  100% {
-    text-shadow: -0.025em 0 0 rgba(230, 0, 158, 0.75),
-      -0.025em -0.025em 0 rgba(11, 248, 249, 0.75);
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
